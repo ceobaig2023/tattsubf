@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punch In/Out</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <nav>
+        <h2>Punch In/Out System</h2>
+        <button id="logoutBtn">Logout</button>
+    </nav>
+
+
+    <div id="userInfo">
+        <h3>Welcome, <span id="userName"></span></h3>
+        <p>User ID: <span id="userId"></span></p>
+    </div>
+
+
+    <div id="buttons">
+        <button id="punchInBtn">Punch In</button>
+        <button id="punchOutBtn">Punch Out</button>
+    </div>
+
+
+    <p id="statusMessage"></p>
+
+    <script src="js/punch.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punch In/Out System</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Panel -->
+    <nav>
+        <a href="logs.html">Logs</a>
+        <button id="logoutBtn">Logout</button>
+    </nav>
+
+    <!-- User Info -->
+    <div id="userInfo">
+        <h3>Welcome, <span id="userName"></span></h3>
+        <p><span id="userId"></span></p>
+    </div>
+
+    <!-- Location Status -->
+    <div id="locationInfo">
+        <h3>Status: <span id="locationStatus">Fetching...</span></h3>
+        <p id="radiusDistance">Distance: Calculating...</p>
+    </div>
+
+    <!-- Punch In/Out Buttons -->
+    <div id="buttons">
+        <button id="punchInBtn">Punch In</button></br>
+        <button id="punchOutBtn">Punch Out</button>
+    </div>
+
+    <!-- Status Message -->
+    <p id="statusMessage"></p>
+
+    <script src="js/punch.js"></script>
+    <script src="js/config.js"></script>
+
+</body>
+</html>
