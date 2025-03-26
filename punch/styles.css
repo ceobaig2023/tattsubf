@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white; /* Set white background */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items in the same row */
+    padding: 10px 10px;
+    background-color: #0d8134;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #0d8134;
+    color: white;
+} */
+
+button {
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%; /* Makes buttons round */
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Punch In/Out Buttons */
+#punchInBtn {
+    background-color: green;
+    color: white;
+}
+
+#punchOutBtn {
+    background-color: red;
+    color: white;
+}
+
+#logoutBtn {
+    background-color: darkred;
+    color: white;
+    width: 63px;  /* Small circular size */
+    height: 38px;
+    border-radius: 50%;  /* Fully circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 16px;  /* Adjust font size if needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Logout Button */
+#logoutBtn {
+    background-color: darkred;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px; /* Rounded but not circular */
+}
+
+/* Status Messages */
+#statusMessage {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Error Messages */
+.error-message {
+    color: red;
+}
+
+/* Normal Status Messages */
+.status-message {
+    color: blue;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fffffff7;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #0d8134;
+    color: white;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+#punchInBtn { background-color: green; color: white; }
+#punchOutBtn { background-color: red; color: white; }
+#logoutBtn { background-color: darkred; color: white; }
+#statusMessage { font-weight: bold; margin-top: 15px; }
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Row Alternating Colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Green for "In" and True Inradius */
+.green {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Blue for "Out" */
+.blue {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Red for False Inradius */
+.red {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #0c6608;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#logoutBtn {
+    background-color: darkred;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+#logoutBtn:hover {
+    background-color: red;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    /* nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    } */
+
+    #logoutBtn {
+        align-self: flex-end;
+    }
+}
